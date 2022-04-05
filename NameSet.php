@@ -1,12 +1,11 @@
 <?php include("class_lib.php"); ?>
-<?php
-	$jacob = new person();
-	$harry = new person;
+<?php 
+        $stefan = new person();
+        $jimmy = new person;
+        $stefan->set_name("Stefan Mischook");
+        $jimmy->set_name("Nick Waddles");
 
-	$jacob->set_name("Jacob Smith");
-	$harry->set_name("Harry Wilson");
-
-	echo "Jacob's full name: " . $jacob->get_name();
-    echo "<br/>";
-	echo "Harry's full name: " . $harry->get_name();
+        echo "Stefan's full name: " . $stefan->get_name() . "</br>";
+        
+        echo "Nick's full name: " . $jimmy->get_name();
 ?>
