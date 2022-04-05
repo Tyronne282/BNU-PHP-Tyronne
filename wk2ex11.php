@@ -2,18 +2,22 @@
 
   $total = 0;
 
-  $mymarks["CO403"] = 45;
-  $mymarks["CO404"] = 55;
-  $mymarks["CO450"] = 65;
-  $mymarks["CO451"] = 75;
-  $mymarks["CO454"] = 85;
-  $mymarks["CO456"] = 95;
+  $mymarks["CO403"] = 83;
+  $mymarks["CO452"] = 72;
+  $mymarks["CO456"] = 69;
+  $mymarks["CO506"] = 92;
+  $mymarks["CO556"] = 86;
+  $mymarks["CO558"] = 76;
 
-  while(list($index, $value) = each($mymarks))
+  foreach($mymarks as $index => $value)
   {
-    $total += $mymarks[$index];
-    $average = $total /  6;
+    echo "For  $index  my grade was  $value <br/>";
+    
+    $total = $total + $mymarks[$index];
   }
 
-  echo "Average mark: $average";
+  $average = $total /  6;
+
+  echo "My average mark was $average";
+
 ?>

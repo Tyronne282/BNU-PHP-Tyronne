@@ -1,12 +1,12 @@
 <?php
-  $topModules[0] = "Internet Systems Development";
-  $topModules[10] = "Programming 1";
-  $topModules[15] = "Programming 2";
-  $topModules[30] = "OOAD";
-  $topModules[40] = "Software Engineering";
+  $topmodules[0] = "Internet Systems Development";
+  $topmodules[5] = "Programming 1";
+  $topmodules[10] = "Programming 2";
+  $topmodules[30] = "OOAD";
+  $topmodules[40] = "Software Engineering";
 
-  while(list($index,$value) = each($topModules))
+  foreach($topmodules as $index => $value)
   {
-    echo "Index is $index  and value is $value <br/>";
+    echo "Index is $index and value is $value <br/>";
   }
 ?>

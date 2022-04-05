@@ -1,23 +1,23 @@
-<?
-  $topModules[0] = "Internet Systems Development";
-  $topModules[1] = "Programming 1";
-  $topModules[2] = "Programming 2";
-  $topModules[3] = "OOAD";
-  $topModules[4] = "Software Engineering";
+<?php
+  $topmodules[0] = 'Open Source Systems';
+  $topmodules[1] = 'Programming 1';
+  $topmodules[2] = 'Programming 2';
+  $topmodules[3] = 'Web Application Development';
+  $topmodules[4] = 'Software Engineering';
 ?>
-<html>
-  <head>
-    <title>Data Table</title>
-  </head>
-  <body>
-    <table border=1 align="center">
-      <tr><th>Index</th><th>Subject</th></tr>
-      <?
-        for($count = 0;$count < 5;$count++)
-        {
-          echo "<tr><td>$count</td><td>$topModules[$count]</td></tr>";
-        }
-      ?>
-    </table>
-  </body>
+
+<head>
+<title>Data in table</title>
+</head>
+<body>
+<table border=1 align="center">
+<tr><th>Index</th><th>Subject</th></tr> 
+<?php
+  for($count = 0;$count < 5;$count++)
+  {
+    echo "<tr><td>$count</td><td>$topmodules[$count]</td></tr>";
+  }	
+?>
+</table>
+</body>
 </html>
